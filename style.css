@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  .header-text {
+    color: #ff5b76;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .unit_first{
+    position: relative;
+  }
+  .live-circel{
+    width: 14px;
+    height: 14px;
+    background: #ff5b76;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    right: 130px;
+  }
+  .offer-container {
+    border: 1px solid #C8C8C8;
+    margin: 20px 0;
+    padding: 20px 80px;
+  }
+  .offer-container.active {
+    border: 2px solid #ff5b76;
+    position: relative;
+  }
+  .most-popular {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    background-color: #ff5b76;
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+    /* position: relative; */
+  }
+
+  .most-popular::before{
+    content: '';
+    /* background: linear-gradient(#000, #ff5b76); */
+    clip-path: polygon( -104% 37%, 132% 235%, 124% 23%, 14% 114%);
+    width: 20px;
+    /* -104% 37%, 56% 365%, 124% 23%, 8% 93%) */
+    height: 20px;
+    position: absolute;
+    background-color: rgb(235, 43, 43);
+    top: -9px;
+    right: 122px;
+  }
+
+  .most-popular::after{
+    content: '';
+    /* background: linear-gradient(#000, #ff5b76); */
+    clip-path: polygon(-8% 75%, -8% 358%, 83% 116%, 0% 48%);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(235, 43, 43);
+    top: -10px;
+    right: -20px;
+  }
+
+  .offer-title, .offer-title1 {
+    font-weight: bold;
+    position: relative;
+  }
+
+  .offer-title::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    border: 1px solid #C8C8C8;
+    left: -38px;
+  }
+
+  .offer-title1::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    border: 1px solid #ff5b76;
+    left: -38px;
+  }
+
+  .discount-tag {
+    background-color: #ff5b76;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-left: 5px;
+  }
+  .offer-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .strike-text {
+    color: #C8C8C8;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+  }
+  .free-delivery {
+    color: #ff5b76;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .btn-add-cart {
+    background-color: #ff5b76;
+    color: white;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .hashvalue{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 580px){
+    .offer-container{
+        padding: 20px 50px;
+    }
+    .col-10{
+        width: 81%;
+    }
+    .col-3{
+        width: 50%;
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px){
+    .col-3 {
+        flex: 0 0 auto;
+        width: 38%;
+    }
+  }
+
+
+
